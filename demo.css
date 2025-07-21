@@ -1,0 +1,50 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+      background-image: url('asset/bg1.jpeg');
+      background-size:100%
+    }
+     header {
+      background-color: #80c4f1;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+     }
+     nav {
+      background-color: #005f99;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+
+    button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005f99;
+    }
+    
+
+    footer {
+      text-align: center;
+      background-color: #e0e0e0;
+      padding: 1rem;
+      margin-top: 2rem;
+    }

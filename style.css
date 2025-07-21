@@ -3,7 +3,8 @@
            background-color:#b5ece5db;
     
             
-        }
+        } 
+        /* kjj */
         h1{
             text-align: center;
         }
@@ -72,4 +73,18 @@
      }
      a{
         text-decoration: none;
+     }
+     a:link{
+        color: #3008e4;
+     }
+     a:visited {
+        color: #ff2600;
+     }
+     a:hover{
+        color: rgb(16, 231, 9);
+     }
+     h5::first-letter {
+  color: grey;
+  font-size: xx-large;
+
      }
