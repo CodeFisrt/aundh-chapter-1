@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo6.css">
+</head>
+<body>
+  <!-- CSS Selectors   -->
+   <p>Every paragraph will be affected by the style</p>
+   <!-- selctors id -->
+    <p id="demo1">Every paragraph will be affected by the style</p>
+    <p id="demo2">Every paragraph will be affected by the style</p>
+    <!-- selectors class -->
+     <p class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     <p class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     <p class="d1 d2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+     CSS Combinators 
+      1) Descendant combinator (space)
+      <!-- The descendant combinator matches all elements that are descendants of a specified element.
+The following example selects all <p> elements inside <div> elements:  -->
+       <div>
+        <p>The descendant combinator matches all elements</p>
+        <p>The descendant combinator matches all elements</p>
+       </div>
+       <p>The descendant combinator matches all elements</p>
+       <p>The descendant combinator matches all elements</p>
+       2) Child Combinator (>) 
+<!-- The child combinator selects all elements that are the children of a specified element.
+The following example selects all <p> elements that are children of a <div> element: --> 
+    <div>
+  <p>Paragraph 1 </p>
+  <p>Paragraph 2 </p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 </p>
+  </section>
+  <p>Paragraph 4 </p>
+</div>
+<p>Paragraph 5.  </p>
+<p>Paragraph 6.  </p>
+
+
+<!-- CSS Pseudo-classes -->
+ 
+    <ul> 
+    <a href="http://google.com" target="_blank"> click mi!</a>
+    <br><br>
+    <a class="highlight" href="http://google.com" target="_blank"> www.google.com</a>
+    </ul>
+ 
+</body>
+</html>

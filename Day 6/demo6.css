@@ -1,0 +1,54 @@
+  /* CSS Selectors */
+#demo1 {
+    text-align: center;
+    color: blueviolet;
+}
+#demo2{
+     text-align: center;
+    color: rgb(43, 189, 226);
+}
+p.d1{
+    text-align: center;
+    color: red;
+}
+p.d2{
+    font-size: 200%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+}
+/* CSS Combinators 
+      1) Descendant combinator (space) */
+div p{
+    background-color: aquamarine;
+}
+/* 2) Child Combinator (>) */
+div > p{
+    background-color: blue;
+}
+ /* CSS Pseudo-classes  */
+    
+    a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+a.highlight:hover{
+    color: blue;
+    font-size: 20px;
+}
+
+
+
