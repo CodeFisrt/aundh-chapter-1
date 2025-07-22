@@ -1,4 +1,4 @@
-  /* CSS Selectors */
+  CSS Selectors
 #demo1 {
     text-align: center;
     color: blueviolet;
@@ -49,6 +49,50 @@ a.highlight:hover{
     color: blue;
     font-size: 20px;
 }
+/* Hover on <div> */
+.c1{
+    background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  width: 50%;
+  display: flexbox;
+}
+div:hover{
+    background-color: blue;
+}
 
+#paraId {
+  visibility: hidden;
+  background-color: yellow;
+  padding: 20px;
+}
+#para1{
+    display: none;
+    color: black;
+    background-color: aquamarine;
+    padding: 20px;
+}
 
+div:hover p {   
+  display: block;
+}
 
+.pad::first-line{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pad1::first-letter{
+    color: black;
+    font-size: x-large;
+}
+h1::before{
+    content:"\1F600";
+}
+h1::after{
+    content:"\1F642";
+}
+::marker{
+    color: aqua;
+    font-size: 30px;
+}
