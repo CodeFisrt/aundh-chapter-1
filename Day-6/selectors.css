@@ -1,0 +1,130 @@
+.anchor{
+    padding: 20px;
+}
+.anchor a{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.anchor a:link{
+    color: brown;
+}
+.anchor a:hover{
+    background-color: greenyellow;
+}
+
+a.linke:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.twoclass{
+    padding: 30px;
+}
+
+.toplit{
+    height: 150px;
+    background-color: lightblue;
+    padding: 30px;
+}
+.second{
+    display: none;
+}
+.frist:hover .second{
+    display: block;
+}
+
+.frist-child{
+    padding: 30px;
+}
+.dd p:first-child{
+    background-color: brown;
+    color: bisque;
+}
+
+/* from focus css */
+.focus{
+    padding: 30px 30px;
+}
+
+.focus form{
+    width: 20%;
+    margin: 0px auto;
+    padding: 20px;
+    box-shadow: 3px -2px 7px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px -2px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px -2px 7px 0px rgba(0,0,0,0.75);
+
+}
+
+.focus h2{
+    text-align: center;
+}
+
+.focus input[type=text],input[type=password]{
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.focus input:focus{
+    background-color: cadetblue;
+    color: white;
+    font-weight: bolder;
+}
+
+button{
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
+
+/* Pseudo-element */
+.Pseudo-element{
+    padding: 30px 30px ;
+}
+
+.after b::after{
+    content: "\1F649";
+}
+.before b::before{
+    content: "\1F649";
+}
+
+::grammar-error {
+  text-decoration: underline red;
+  color: red;
+}
+
+.selction{
+    text-align: center;
+    padding: 30px;
+}
+
+.selction p{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.selction p::selection{
+    background-color: yellow;
+    color: red;
+}
+
+.first-letter{
+    padding: 30px;
+}
+
+.first-letter h2::first-letter{
+    font-size: 40px;
+    color: blue;
+}
+
+.first-letter p::first-letter{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 3px;
+}
