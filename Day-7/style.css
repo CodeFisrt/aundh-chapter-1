@@ -1,4 +1,94 @@
- 
-h1{
-    color: blue;
+*{
+    margin: 0px;
+}
+/* .main{
+    background-image: url(./);
+} */
+.navbar{
+
+    color: white;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nelement ul li{
+    padding: 9px;
+}
+.nelement ul{
+    list-style-type: none;
+    display: flex;
+}
+.image{
+    background-image: url(./image/pexels-pixabay-460672.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* position: fixed;
+    z-index: -1; */
+
+}
+
+.content{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    
+    text-align: center;
+}
+.content h1{
+    font-size: 50px;
+    color: rgb(121, 71, 7);
+}
+.content h3{
+    color: #046107;
+
+}
+.box{
+    display: inline ;
+    border-radius: 50%;
+    background-color: red;
+    padding: 10px;
+    margin: 2px;
+}
+.rlet{
+    position:   relative;
+    /* position: fixed; */
+    /* position: static; */
+    /* position: sticky; */
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border: 2px solid black;
+}
+.positions1{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed p{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+.simple{
+    background-color: blueviolet;
+    padding: 10px;
+    height: 800px;
 }
