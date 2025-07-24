@@ -144,6 +144,8 @@ div.dropdown {
         .footer-column {
             position: relative;
             z-index: 1;
+            height: 200px;
+            margin-top: 2px;
         }
 
         .footer-column h3 {
@@ -275,7 +277,7 @@ div.dropdown {
         }
 
         /* Animations */
-        @keyframes fadeIn {
+        @keyframes fadeIn { 
             from {
                 opacity: 0;
                 transform: translateY(20px);
