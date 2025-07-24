@@ -6,15 +6,16 @@
 } */
 .navbar{
 
-    color: white;
+    /* color: white; */
     padding: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 
 }
 nav{
-    background-color: black;
+    background-color: rgb(17, 16, 16);
     position: sticky;
     top: 0;
     z-index: 999;
