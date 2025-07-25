@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<style>
+    .bgimg{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678) ),  url(./image/Car.png);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(50%);
+    }
+    .bgcolor{
+        background-color: rgba(39, 36, 36, 0.705);
+    }
+    .bgcolor:hover{
+        background-color: purple;
+    }
+    .card-body img{
+        height: 30%; 
+        width: 30%; 
+        filter: invert(100%) brightness(200%);  
+    }
+    .card:hover{
+        background-color: purple;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container-fluid bgimg">
+        <div class="row">
+            <div class="col-12 col-md-11 mx-auto pt-4">
+                <nav class="navbar navbar-expand-lg bgcolor p-md-3 px-lg-4 shadow rounded-5">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="#"><b> The Mechanix</b></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" href="#">Pricing</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center text-white  py-5">
+                <h1 class="display-2 py-5 fw-bolder sgadow">Streamline Your Garage Operation</h1>
+            </div>
+        </div>
+        <div class="row mx-auto container">
+            <div class="col-12 col-md-4 py-2">
+                <div class="card rounded border-0 mx-auto text-center shadow bgcolor py-3" style="width: 70%;">
+                    <div class="card-body text-white">
+                        <img src="./image/administrator.png" alt="not found">
+                        <h5 class="card-title pt-3">Admin</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+                <div class="card rounded border-0 mx-auto text-center shadow bgcolor py-3" style="width: 70%;">
+                    <div class="card-body text-white">
+                        <img src="./image/mechanic.png" alt="not found">
+                        <h5 class="card-title pt-3">Mechanics</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 py-2">
+                <div class="card rounded border-0 mx-auto text-center shadow bgcolor py-3" style="width: 70%;">
+                    <div class="card-body text-white">
+                        <img src="./image/bill.png" alt="not found">
+                        <h5 class="card-title pt-3">Bill Staff</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Access Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    .bgimg {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bgimg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(./image/Admin.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+        z-index: 0;
+    }
+
+    .bgimg>* {
+        position: relative;
+        z-index: 1;
+    }
+
+    .bgimg2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(./image/Admin.png);
+        /* height: 100vh;
+        width: 100%; */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(50%);
+
+        box-shadow: 4px 6px 124px 11px rgba(242, 228, 228, 0.5);
+        -webkit-box-shadow: 4px 6px 124px 11px rgba(242, 228, 228, 0.5);
+        -moz-box-shadow: 4px 6px 124px 11px rgba(242, 228, 228, 0.5);
+    }
+
+    .input-icon-wrap {
+        position: relative;
+    }
+
+    .input-icon-wrap input {
+        padding-right: 35px;
+        /* space for icon */
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .input-icon-wrap i {
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        pointer-events: none;
+    }
+
+    .form-control::placeholder {
+        color: white;
+    }
+
+    .btn-hover:hover {
+        background-color: purple;
+    }
+
+    .logo {
+        display: inline;
+        background-color: rgba(174, 159, 216, 0.4);
+
+    }
+
+    .ss {
+        background-color: rgba(174, 159, 216, 0.4);
+    }
+</style>
+
+<body>
+    <div class="container-fluid bgimg">
+        <div class="row h-100 d-flex justify-content-center align-items-center">
+            <div class="col-xs-12 col-sm-11 col-md-11 col-lg-8 col-xxl-11 mx-auto bgimg2 rounded-5">
+                <div class="row text-white p-4">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                        <!-- <h2 class="">The Mechanix</h2> -->
+                        <h3 class="logo rounded-5 px-3 py-1 text-center">Admin Access Panel</h3>
+                    </div>
+                    <div class="col-12 col-md-6 ss rounded-5 p-4">
+                        <form>
+                            <h2 class="text-center">Login</h2>
+                            <div class="input-icon-wrap">
+                                <input type="email"
+                                    class="form-control text-white fw-bold bg-transparent rounded-0 border-0 border-bottom"
+                                    placeholder="User Name">
+                                <i class="bi bi-person-circle fs-4"></i>
+                            </div>
+                            <div class="py-3"></div>
+                            <div class="input-icon-wrap">
+                                <input type="password"
+                                    class="form-control bg-transparent fw-bold text-white rounded-0 border-0 border-bottom"
+                                    placeholder="Password">
+                                <i class="bi bi-file-lock-fill fs-4"></i>
+                            </div>
+                            <div class="pt-5 d-flex justify-content-between">
+                                <button type="button"
+                                    class="btn border fw-bold text-white px-3 rounded-pill btn-hover">Log In</button>
+                            </div>
+                        </form>
+
+                        <div class="d-flex justify-content-end pt-4">
+                            <button type="button" class="btn border fw-bold text-white px-3 rounded-pill btn-hover"><i
+                                    class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+</html>
