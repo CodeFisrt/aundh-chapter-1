@@ -68,6 +68,7 @@ input {font-size: 18px; display: block; width: 90%; border: none; border-bottom:
     display: block;
     cursor: pointer;
     margin: 50px auto;
+    
 }
 .register-btn { font-size: 14px; color: rgb(234, 233, 238); text-transform: capitalize; position: absolute; bottom: 20px; right: 20px; cursor: pointer; }
  
