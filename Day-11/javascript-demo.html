@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div input[type=text]{
+            padding: 10px 40px 10px 5px;
+            margin: 10px;
+        }
+        button{
+            padding: 5px 20px;
+            margin: 10px;
+        }
+        span{
+            border: 2px solid black;
+            margin: 10px;
+        }
+        #output{
+            margin: 10px;
+        }
+
+
+        .form{
+            border: 3px solid black;
+            /* width: 40%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding: 20px 0px; */
+        }
+       .form h3{
+            
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-box{
+            width: 70%;
+            display: block;
+            padding: 10px 5px;
+            margin: 10px 10px;
+            /* text-align: center; */
+        }
+        .input-box1{
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+        .btn{
+            padding: 10px 20px;
+            background-color: black;
+            border: 0cap;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    <h3>Input text add in Textarea when we click a button</h3>
+    <input type="text" placeholder="Enter a Text" id="textbox"> <br>
+    <button onclick="changeText();">Click Me</button> <br>
+    <textarea id="output" rows="10" cols="50"></textarea>
+
+    
+    </div>
+
+
+<!--    
+        <div class="form" id="textbox1">
+
+            <h3>Simple Form </h3>
+            
+            <input class="input-box" type="text" placeholder="Enter Name" id="textbox1">
+            <input class="input-box" type="email" placeholder="Enter Email" id="textbox2">
+            <input class="input-box" type="number" placeholder="Enat Age" id="textbox3">
+            <select class="input-box1" name="" id="course">
+                <option value="" selected>Select Your Course</option>
+                <option value="">MERN</option>
+                <option value="">MEAN</option>
+            </select>
+            
+            <button class="btn" onclick="changeText1();">Submit</button>
+        </div>
+
+
+    <textarea name="" id="output1" rows="10" cols="50"></textarea> -->
+
+    <div class="form">
+    <h3>Simple Form</h3>
+
+    <input class="input-box" type="text" placeholder="Enter Name" id="textbox1">
+    <input class="input-box" type="email" placeholder="Enter Email" id="textbox2">
+    <input class="input-box" type="number" placeholder="Enter Age" id="textbox3">
+
+    <select class="input-box1" id="course">
+        <option value="" selected>Select Your Course</option>
+        <option value="MERN">MERN</option>
+        <option value="MEAN">MEAN</option>
+    </select>
+
+    <button class="btn" onclick="changeText1();">Submit</button>
+</div>
+
+<textarea id="output1" rows="10" cols="50"></textarea>
+
+    <script>
+        function changeText() {
+            var span = document.getElementById("output");
+            var textBox = document.getElementById("textbox");
+            span.innerText = textbox.value;
+            textbox.style.color = "red";
+            }
+
+            // function changeText1(){
+            //       var span = document.getElementById("output1");
+
+            // var textBox = document.getElementById("textbox1");
+            // var textBox = document.getElementById("textbox2");
+            // var textBox = document.getElementById("textbox3");
+
+            // span.innerText = textbox.value;
+            // textbox.style.color = "red";
+            // }
+            function changeText1() {
+    var name = document.getElementById("textbox1").value;
+    var email = document.getElementById("textbox2").value;
+    var age = document.getElementById("textbox3").value;
+    var course = document.getElementById("course").value;
+
+    var output = `Name: ${name}\nEmail: ${email}\nAge: ${age}\nCourse: ${course}`;
+    
+    var outputBox = document.getElementById("output1");
+    outputBox.value = output;
+    outputBox.style.color = "red";
+}
+    </script>
+</body>
+</html>
