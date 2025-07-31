@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js-code.js"></script>
+    <style>
+        .form1{
+            border: 2px solid black;
+            width: 30%;
+            padding: 30px;
+        }
+        .input-box{
+            width: 70%;
+            display: block;
+            padding: 10px 5px;
+            margin: 10px 10px;
+            /* text-align: center; */
+        }
+        .addition{
+            width: 30%;
+            margin-top: 30px;
+            padding: 30px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form1">
+            <h3>Simple Form dat get in Textarea</h3>
+            <label for="">Name : </label>
+            <input class="input-box" type="text" id="name"><br>
+            <label for="">Age :</label>
+            <input class="input-box" type="number" id="age"> <br>
+            <label for="">Select Course :</label>
+            <select name="" id="selsct">
+                <option value="1" selected>Select Option</option>
+                <option value="MERN">MERN</option>
+                <option value="MEAN">MEAN</option>
+            </select> <br> <br>
+            <button onclick="submit1()">Submit</button> <br> <br>
+            <textarea name="" id="result2" cols="40" rows="10"></textarea>
+        </div>
+        <div class="addition">
+            <h3>Simple Addition and Subtraction</h3>
+            <input type="number" id="num1" placeholder="enter a number"> <br><br>
+            <input type="number" id="num2" placeholder="enter a number"><br><br>
+            <button id="submit" onclick="addition11()">Submit</button> <br><br>
+            <textarea name="result" id="result" rows="5" cols="50">
+
+            </textarea>
+        </div>
+        <div class="addition">
+            <h3>Addition , Subtraction ,Multiplication</h3>
+            <input type="number" placeholder="Enter Number" id="a1"> <br> <br>
+            <input type="number" placeholder="Enter Number" id="b1">
+            <br><br>
+            <button onclick="addition1()">Add</button>
+            <button onclick="subtraction1()">Substraction</button>
+            <button onclick="multipliction1()">Maltiplication</button>
+            <!-- <button onclick="addition1()">Add</button> --> <br> <br>
+             <textarea name="" id="result3" cols="40" rows="10"></textarea>
+        </div>
+
+    </div>
+</body>
+</html>
