@@ -1,0 +1,44 @@
+.Main{
+    
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: -1px 0px 20px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 0px 20px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 20px -10px rgba(0,0,0,0.75);
+padding: 20px;
+margin-top: 50px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+input[type=text]{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+input[type=email]{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.name{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+ #gender{
+    padding: 0px 10px;
+ }
+.lable1{
+padding-left: 20px;
+}
+.section2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.but{
+    text-align: center;
+    margin-top: 20px;
+}

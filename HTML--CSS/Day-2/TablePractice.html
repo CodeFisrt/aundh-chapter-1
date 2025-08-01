@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table ,th , td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tablepractic">
+        <table>
+            <caption>student details</caption>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Education</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sagar</td>
+                <td>MCA</td>
+                <td>Sangamner</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Om</td>
+                <td>Btech</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bharat</td>
+                <td>BCA</td>
+                <td>Bihar</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div>
+        <table>
+            <caption>student details</caption>
+            <tr>
+                <!-- <th>No</th> -->
+                <th colspan="2" >No & Name</th>
+                <th>Education</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sagar</td>
+                <td>MCA</td>
+                <td>Sangamner</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Om</td>
+                <td>Btech</td>
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bharat</td>
+                <td>BCA</td>
+                <td>Bihar</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div>
+        <table>
+            <caption>student details</caption>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Education</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sagar</td>
+                <td rowspan="2">MCA</td>
+                <td>Sangamner</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Om</td>
+                <!-- <td></td> -->
+                <td>Pune</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bharat</td>
+                <td>BCA</td>
+                <td>Bihar</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
