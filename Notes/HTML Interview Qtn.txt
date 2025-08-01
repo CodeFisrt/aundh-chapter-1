@@ -1,0 +1,192 @@
+#1) What is HTML5?
+=> HTML5 is an latest version if HTML (Hyper Tesxt Markup Langauge).
+   - HTML an standard text formatting langauge which is used to create and dispaly pages on web.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+#2) HTML5 introduces some new features / what are the new feaures of HTML5?
+	~ Better Error Handling.
+	~ Enhanced support for embedding multi-media & Graphics (Audio,Video,Canvas,svg)
+	~ Multi Device support  	
+  	~ Adding new Attributes for better document structure like <article>,<bdi>,<figcaption>,<meter>
+	~ Form controls, including <calendar>, <email>, <search>, and <url>
+	~ Sementing Tags like <header>, <footer>, <main>, <Section>
+	~ Adding new parsing rules to enhance flexiblity.
+  	~ Allow offline editing.
+  	~ Support Protocol and MIME handler registration.
+	~ Support Web SQL	 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#3) What is the difference between HTML and HTML5?
+=> 
+______________________________________________________________________________________________________________________________
+          HTML5 					 	|				HTML			     
+________________________________________________________________|______________________________________________________________
+i) Attributes of Asnyc,Charset & Ping available HTML5		|  Not available in HTML 				     	 
+________________________________________________________________|______________________________________________________________	
+ii) <!Doctype> Declaration is simple				| Complex and log						
+________________________________________________________________|______________________________________________________________
+iii) Support Drag and Drop effect				| Do not support						
+________________________________________________________________|______________________________________________________________
+iv) High level Video and Audio support				| Do not Support
+________________________________________________________________|______________________________________________________________
+v) Support Canvas, SVG & other vertual vector graphics		| only possible using 3rd party plugins like VML, silverlight 
+________________________________________________________________|______________________________________________________________
+vi) Allows permanent storage by using Application Cache, web SQL| Browser cache is temprary
+ DataBase, web storage						|
+________________________________________________________________|______________________________________________________________
+vii) Mobile friendly						| It is not
+________________________________________________________________|______________________________________________________________
+viii) Allow JavaScript run in Background			| Not allowed in HTML
+________________________________________________________________|______________________________________________________________
+ix)Drawing Shapes likes circle,reactangle,traingale is possible | Same things not possible in HTML
+________________________________________________________________|______________________________________________________________						    
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#4) Important HTML5 Technologies ?
+	- Canvas 2D
+	- Drag And Drop
+	- File API
+	- Geolocation API
+	- CCS3
+	- SVG
+	- Web Storage
+	- Web Sockets
+	- Offline application
+	- Web messaging
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#5) How do you understand web worker?
+=> Addition of web worker brings multithreading capablity to java script. This are script running in background that doesn't neccessory the web page to wait for thier 
+   complition.Hence,a user can interact freely with the web page while a web worker runs in the background
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#6) What do you understand by HTML tags? How many tags are required to create a web page in HTML5?
+=> A set of charactor enlosed between angle bracket (<>tag</>)that develop formtted command of web page is called as tags
+   ~Tags help in sending instructions to the web browser on what to display and how to display.
+   ~minimum of 3 tags are required for creating a web page in HTML5:
+	1) <head>
+	2) <body>
+	3) <html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#7) Please explain the various formatting tags in HTML5?
+=> HTML5 has a total of 12 formatting tags:
+
+	<b> - Used for making the text bold.
+	<big> - Used for increasing the font size of the text by one unit.
+	<del> - Used to display the deleted text.
+	<em> - Used for making the text italic with added semantics importance.
+	<i> - Used to make the text italic.
+	<ins> - Used for displaying the added text.
+	<mark> - Used for highlighting the text.
+	<small> - Used to decrease the font size of the text by one unit.
+	<strong> - Used for telling the browser that the text is important.
+	<sub> - Used for making the text a subscript.
+	<sup> - Used to make the text a superscript.
+	<u> - Used for underlining the text.
+  (Formatting Tag grouped into two categary:
+	1. Logical Tags- add some logical value to text
+	2. Physical Tags- adding visual appearance to text)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 8) Explain the <figure> tag in HTML5?
+=> <figuare> tag is used to specified self contained content in web page like diagram,Images.
+	-Its position is independent i.e if it is removed then also it will not affect on main flow of document. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 9) Explain the various new tags introduced by HTML5 in Media Elements?
+=> HTML5 introduces the following five new tags in Media Elements:-
+	1. <audio>: Eliminates the need for additional plugins for playing audio content like audio streams and music.
+	2. <embed>: Embeds an external application or content
+	3. <source>: Adds multimedia resources like audio, picture, and video.
+	4. <track>: Adds caption files or subtitles while the multimedia file is playing.
+	5. <video>: Adds video content like embedded video content, movie clips, and videos.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 10) What is a <meta> tag in HTML5?
+=> <meta> specifies meta data about HTML5 document
+   meta element used to specify:
+	@ Aurthor name
+	@ keyword
+	@ Description
+   The metadata supplied by the <meta> tag is used by:
+	@ Web browsers to know how to display content or reload a web page
+	@ Search engines to know about keywords on a web page
+	@ Other web services
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 11) Are the HTML tags and elements the same thing?
+=> NO. HTML element surrounded by starting & end tag and it may contain some content eg.<h1>Element</h1>
+	in this case <h> & </h1> are tags.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 12) What is <!DOCTYPE>?
+=> <!DOCTYPE> is an declerartion to understand which HTML version used to written page.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 13) What will happen if the <!DOCTYPE> is not specified in an HTML web page?/Is it necessary to use in HTML5?
+=> If it will not specified into HTML web page then web browser will unable to understand new tag of HTML5.
+   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 14) Why do you think the addition of drag-and-drop functionality in HTML5 is important? How will you make an image draggable in HTML5?
+=> When it comes to UI interaction, the drag-and-drop is essential functionality. Almost all modern U.I.s have it. It makes copying, moving, and linking an object, 
+   such as an image or a link, very easy.
+   To make an image draggable in HTML5, we need to set the draggable image attribute true i.e.:type = <img draggable = "true">
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 15) What do you understand by image maps in HTML5? How many types does it have? 
+=> Image maps allow users to click on images for opening new web pages. As such, these are a combination of images and URLs. Image maps are of two types:
+	Client-side Image Map - Created using <area> and <map> elements. The map element holds the map information, and the area element takes the attributes 
+				for defining each section of the map.
+	Server-side Image Map - Created using the <usemap> attribute, which is the name of the map.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 16) Why do we need the MathML element in HTML5?
+=>  MathML stands for Mathematical Markup Language. It is a form of XML for describing the Math notation. MathML is a markup language for displaying mathematical 
+    and scientific expressions over web pages.
+    For implementing the MathML element i.e. displaying a mathematical equation, we put it inside the <math> and </math> tags.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 17) What does a hyperlink mean? Can it be only text? 
+=> Upon clicking, a hyperlink moves the user from one web page or document to some other web page. A hyperlink can be used upon a text as well as upon an image. 
+	For converting an image into a link we use:
+	<a href = " "...</a>>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 18) How will you add the autocomplete feature in a textbox?
+=> For an <input> element, the <datalist> tag specifies a list of predefined options. It can be used for adding the autocomplete feature to a textbox. As a user inputs data,
+	 a dropdown list of available options will appear.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 19) Briefly explain various page structure elements in HTML5
+=> Following are the various page structure elements available in HTML5:
+
+	<article> - Represents a set of information on a web page
+	<aside> - Represents the sidebar of a web page
+	<footer> - Represents the footer section of a web page
+	<header> - Represents the header section of a web page
+	<nav> - Represents the navigational elements of a web page
+	<section> - Represents the set of instructions used inside an article block for defining the basic structure of a web page
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 20) Explain the Advantage and Disadvantages of using HTML5?
+=> Some advantages of HTML5 are:
+	-Better semantics and cleaner code.
+	-Consistency in coding a web page.
+	-Elegant and fancier forms reduced need for JavaScript.
+	-Geolocation support.
+	-Many new features that make animations and front-end elements easier to code and display on different browsers.
+	-Offline application cache which helps users to view a page even when they are not connected to the internet.
+ Some disadvantages of HTML5 are:
+	-Only modern versions of the browsers support HTML5. Not all users use the latest version of browsers.
+	-Many features are still not stable and are in the development stage.
+	-Due to licensing issues, the rich media is compressed into multiple formats to be compatible with most browsers.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 21) What are the useful API (Application programmimg interface) in HTML5?
+=> Some of the useful APIs in HTML5 are:
+	-Fetch: Fetch has made Http requests easier than it was with XMLHttpRequest.
+	-Battery status: checks the battery status of the device.
+	-Geolocation: tells the device location.
+	-Clipboard: copy the contents to the clipboard.
+	-Forms: new types have been added for validation and rendering.
+	-Drag and drop: easily drag and drop items in the app.
+	-Screen orientation: Checks the device’s screen orientation.
+	-Web audio: Process audio on the client-side.
+	-Internalization: International formatting and string comparison.
+	-Web sockets: real-time communication between server and client.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 22) What is the use of DateTime-local input control in Web form 2.0?
+=> It indicates date and time (year, month, day, hour, minute, second, a fraction of a second) encoded as per ISO 8601 without timezone information.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 23) Is HTML5 backward compatible with old browsers?
+=> No, old browsers can support some basic features, but the video and audio support, semantics, etc. are not backward compatible. 
+	Although, we can make the older browsers learn how to handle the unknown elements. 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 24) What is the use of URL input control in Web form 2.0?
+=> This control accepts only URL value and is used for input fields that need a URL address. It will not accept any other values like text input. 
+	The accepted formats are: http://www.<webaddr> or http://<webaddr> 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 25) 

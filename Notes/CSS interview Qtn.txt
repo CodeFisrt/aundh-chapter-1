@@ -1,0 +1,166 @@
+# 1) What is CSS?
+=> CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. 
+   It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces
+   ~CSS was developed and is maintained by the World Wide Web Consortium (W3C). It was first released on December 17, 1996.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2) What are the different variations of CSS?
+=> 	CSS 4
+	CSS 3
+	CSS 2.1
+	CSS 2
+	CSS 1
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 3) What are the benefits of using CSS?
+=> 	Accessibility
+	Page reformatting
+	Site-wide consistency
+	Bandwidth
+	Separation of the bandwidth of presentation
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 4) What are the disadvantages of CSS?
+=> 	Target specific texts, styling, and rules are not allowed.
+	There are no expressions.
+	There is no dynamic behavior to control pseudo-class.
+	It is not possible to ascend by selectors.
+	Vertical control is limited.
+	The column declaration is not there.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 5) Give a few examples of modules found in the present version of CSS?
+=> 	Box Model
+	Selectors
+	Text effects
+	Backgrounds and Borders
+	Animations
+	2D/3D Transformations
+	User Interface.
+	Multiple Column Layout
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 6) What is the difference between CSS2 and CSS3?
+=> ~In CSS2, everything is present in a single document while CSS3 is categorized into multiple sections called modules.
+   ~Graphics-related features such as Box-shadow or Border-radius, flexbox, etc. can be found which are absent incase of CSS2.
+   ~Properties such as background-position, background-image, and background-repeat styles can be helpful for using multiple background images in a single webpage.
+   ~CSS3 versions support many new browsers.
+   ~CSS3 introduces many new selectors in the form of pseudo-elements and pseudo-classes.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 7) Name a few CSS style components?
+=> A few CSS style components include Property, Value, and Selector
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 8) What do you understand by CSS opacity?
+=> CSS opacity is the property used to describe the transparency of an element. Or, in other words, it explains how clear the image is.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 9) Which property controls the image scroll in the background?
+=> Image scroll in the background can be controlled using the background-scroll property.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 10) Why should background and color be used as separate properties?
+=> This is done with mainly two purposes:
+ 	- It makes the style sheets more legible. Background property, which is complex in itself, becomes all the more complex with color.
+   	- Color is an in-built property while the background is not one. And this can lead to a lot of confusion.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 11) How to maintain the CSS specifications?
+=> It is maintained using the World Wide Web Consortium.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 12) What are the ways to integrate CSS as a web page?
+=> i) Embedded: There can be a style element inside the head element inside which we can place the code.
+   ii) Inline: CSS applied HTML elements can be found using style attributes.
+   iii) Imported or Linked: In the case of linked or imported CSS, the CSS is placed in an external file and a link element is used to link it.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 13) What are the advantages and disadvantages of using external style sheets?
+=> 	Advantage:
+   ~ There can be many documents for multiple HTML elements, along with many classes.
+   ~ Multiple documents with various styles can be controlled using different styles.
+   ~ Selector and grouping methods can be used for grouping styles in composite situations.
+	Disadvantages:
+   ~ For rendering the document, external style sheets have to be loaded.
+   ~ It is not suitable for small style definitions.
+   ~ For importing documents with style information, an additional download is required.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 14) What is the meaning of the CSS selector?
+=> Just like there is the string in HTML, there is a selector in CSS which is used for the purpose of linking HTML and style sheet elements.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 15) What are the different types of Selectors in CSS?
+=> a) Universal Selector: The universal selector works like a wildcard character, selecting all elements on a page. 
+			  In the given example, the provided styles will get applied to all the elements on the page.
+	Delared by * {
+  			color: "green";
+  			font-size: 20px;
+  			line-height: 25px;
+			}
+
+   b) Element Type Selector: This selector matches one or more HTML elements of the same name. In the given example, 
+			     the provided styles will get applied to all the ul elements on the page.
+			ul {
+  			    line-style: none;
+  			    border: solid 1px #ccc;
+				}
+
+   c) ID Selector: This selector matches any HTML element that has an ID attribute with the same value as that of the selector. In the given example, 
+		   the provided styles will get applied to all the elements having ID as a container on the page.
+			#container {
+  					width: 960px;
+  					margin: 0 auto;
+					}
+
+   d) Class Selector: The class selector also matches all elements on the page that have their class attribute set to the same value as the class.  
+		      In the given example, the provided styles will get applied to all the elements having ID as the box on the page.
+			.box {
+ 				 padding: 10px;
+ 				 margin: 10px;
+  				 width: 240px;
+				}
+
+  e) Descendant Combinator: The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more 
+			    specific in your selection method.
+			#container .box {
+					float: left;
+					padding-bottom: 15px;
+						}
+  
+  f) Child Combinator: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, 
+			except it only targets immediate child elements.
+			#container> .box {
+					float: left;
+					padding-bottom: 15px;
+						}
+
+  g) General Sibling Combinator: A selector that uses a general sibling combinator to match elements based on sibling relationships. 
+				 The selected elements are beside each other in the HTML.
+			  h2 ~ p {
+				margin-bottom: 20px;
+					}
+  h) Adjacent Sibling Combinator: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. 
+				  The difference is that the targeted element must be an immediate sibling, not just a general sibling.
+			 p + p {
+				text-indent: 1.Sem;
+				margin-bottom: 0;
+					}
+
+  i) Attribute Selector: The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets.
+			 input [type=”text”] {
+						background-color: #444;
+						width: 200px;
+							}
+
+# 16) What is VH/VW (viewport height/ viewport width) in CSS?
+=> It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. 
+   The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. 
+   Similarly, if the width is 1000px, then 1 vw is equal to 10px.0286y7
+/K:Lpojuhy
+
+# 17) What is a Pseudo element? What is pseudo-class?
+=> Pseudo-classes select regular elements but under certain conditions like when the user is hovering over the link.
+	
+	:link
+	:visited
+	:hover
+	:active
+	:focus
+  A pseudo-element however allows us to create items that do not normally exist in the document tree, for example 
+	::after.
+
+	::before
+	::after
+	::first-letter
+	::first-line
+	::selection
+
+# 18)  
