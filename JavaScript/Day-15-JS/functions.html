@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style></style>
+<body>
+    <!-- <div class="container" style="border: 2px solid red; width: 40%; padding: 30px; margin: 0px auto;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, assumenda corrupti! Reprehenderit quaerat facilis mollitia provident officiis sit. Reiciendis, cum?</p>
+        <b id="demo"></b> <br><br> -->
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <!-- <p id="result">qq</p> -->
+         <!-- <textarea name="" id="result"></textarea> -->
+        <p id="result"></p>
+        <!-- <input type="text" id="result"> -->
+         <br><br>
+        <button onclick="demoAddition()">add</button>
+    <!-- </div> -->
+
+
+
+    <script>
+        // function demoSet(name){
+        //     return("Hello "+name)
+        // }
+        // let result = demoSet("sagar");
+        // console.log(result)
+        // document.getElementById("demo").innerHTML = " "+result;
+
+        // function demoAddition(){
+        //     var a = document.getElementById("num1").value;
+        //     var b = document.getElementById("num2").value;
+        //     var c = parseInt(a) + parseInt(b);
+        //     var output = `Addition of ${a} and ${b} = ${c}`;
+        //     var resultbox = document.getElementById("result");
+        //     resultbox.value = output;
+        // }
+        function demoAddition(){
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+
+    // var c = parseInt(a) + parseInt(b)
+    var output = `${a} = = = ${b}`;
+    var resultbox = document.getElementById("result");
+    resultbox.innerHTML = output
+}
+    </script>
+</body>
+</html>
