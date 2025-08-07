@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="task1.js"></script>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .conatiner{
+        background-color: rgb(153, 176, 219);
+        height: 500px;
+    }
+    nav{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .items b{
+        padding: 0px 10px;
+    }
+    .form{
+        border: 2px solid black;
+        width: 40%;
+        padding: 30px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+</style>
+<body>
+    <div class="conatiner">
+        <nav id="bgcolor">
+            <div>
+                <h1 class="heding">CodeFrist</h1>
+            </div>
+            <div class="items">
+                <b>Home</b>
+                <b>About</b>
+                <b>Contact Us</b>
+            </div>
+            <div>
+                <button onclick="nightmode()">Night</button>
+            </div>
+        </nav>
+
+        <div class="form">
+            <input type="number" id="num11"><br><br>
+            <button onclick="inputSquare()">Square</button><br><br>
+            <textarea id="result" cols="40" rows="10" ></textarea>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
