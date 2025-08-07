@@ -7,3 +7,8 @@ function textColor(){
     var demo = document.getElementById("demo");
     demo.style.color = "red"
 }
+
+
+function sudentData(){
+    
+}
