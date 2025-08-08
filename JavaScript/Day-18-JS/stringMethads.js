@@ -23,9 +23,12 @@ var str = "Code Frist technology";
 // var text3 = text1.concat(text2) 
 // console.log(text3)
 
+// split()
 // var text = "Apple, Banana, Kiwi";
 // console.log(text.split(""))
 // console.log(text.length);
+
+// slice()
 // var method = text.slice(7,12);
 // console.log(method);
 
