@@ -16,7 +16,23 @@ var arr = ["Banana", "Orange", "Apple", "Mango"];
  var arr1 = arr.unshift('coconat');
  console.log(arr);
 
+// array map :Calls a defined callback function on each element of an array, and returns an array that contains the results.
+var number = [1,2,3,4,5,6];
+  var squared = number.map(num =>num*num);
+ console.log(squared);
 
-var num = [1,2,3,4,5,6]
-  var arr1 = arr.map();
- console.log(arr);
+//  array filter :Returns the elements of an array that meet the condition specified in a callback function.
+
+ var even = number.filter(num =>num % 2===0);
+ console.log(even);
+  
+//  array rediuse:Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is 
+// provided as an argument in the next call to the callback function.
+
+var sum = number.reduce((total,num)=>total + num, 0);
+ console.log(sum);
+
+// array find :
+
+ var found = number.find(num =>num > 5);
+ console.log(found);
