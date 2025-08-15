@@ -14,9 +14,9 @@ console.log(arr);
 // console.log(arr);
 
 // slice
-// var arr3 = arr.slice(0 , 3);
-// console.log(arr3);
-// console.log(arr)
+var arr3 = arr.slice(0 , 3);
+console.log(arr3);
+console.log(arr)
 
 // splice()
 // var arr3 = arr.splice(1 , 3 ,'dhoni');
@@ -56,9 +56,12 @@ console.log(arr);
 // var result = positive.filter(demo);
 // console.log(result)
 var arr2 = [20,50,34,3,5,67,78,90,23,12,34,45,,37,38,39]
-function demo2(num){
-    return (num >= 10 && num<=80);
-}
+// function demo2(num){
+//     return (num >= 10 && num<=80);
+// }
 
-var result2 = arr2.filter(demo2);
-console.log(result2);
+// var result2 = arr2.filter(demo2);
+// console.log(result2);
+
+var s = arr2.split(1,4);
+console.log(s);
