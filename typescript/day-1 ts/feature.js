@@ -19,7 +19,8 @@ console.log(addition(10, 7));
 var square = function (x) { return x * x; };
 console.log(square(4));
 // 
-var getUser = function (id) { return ({
+var getUser = function (id) { 
+    return ({
     id: id,
     name: "User_" + id,
 }); };

@@ -1,15 +1,15 @@
-// array push method
+// array push method :- Appends new elements to the end of an array, and returns the new length of the array.
 var arr = ["Banana", "Orange", "Apple", "Mango"];
-// var arr1 =arr.push('coconat');
-//  console.log(arr);
-// array pop 
-//  var arr1 = arr.pop();
-//  console.log(arr);
+var arr1 =arr.push('coconat');
+ console.log(arr);
+// array pop :- Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+ var arr1 = arr.pop();
+ console.log(arr);
  
 
 // array shift :Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
-//  var arr1 = arr.shift();
-//  console.log(arr);
+ var arr1 = arr.shift();
+ console.log(arr);
 
 
 // array unshift :Inserts new elements at the start of an array, and returns the new length of the array.
@@ -32,7 +32,7 @@ var number = [1,2,3,4,5,6];
 var sum = number.reduce((total,num)=>total + num, 0);
  console.log(sum);
 
-// array find :
+// array find :- Returns the value of the first element in the array where predicate is true, and undefined otherwise.
 
  var found = number.find(num =>num > 5);
  console.log(found);

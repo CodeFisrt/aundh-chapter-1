@@ -1,0 +1,180 @@
+    1) what is javascript ?
+:JavaScript is a high-level, dynamic, and interpreted programming language mainly used for
+ making web pages interactive and dynamic.
+   
+2)JS Placement 
+ JS can be in <head>, <body>, or external file
+
+3)DOM Access :DOM Access: document.getElementById('id')
+
+4)JS Variables :3 type of variable
+ 
+    1)var = it is have in local & global scope.
+      re-initialization is possible
+      re-decleration is possble
+    2)let = it is have in only local scope. 
+      re-initialization is possible
+      re-decleration is not possble
+
+    3)const =: local scope
+      re-initialization is not possible  
+      re-decleration is not  possble
+
+5)Data Types :
+  Primitive: 
+         number, string, boolean, null, undefined
+• Non-Primitive:
+                object, array, function
+
+
+6)JavaScript Operators:-
+• Arithmetic: +, -, *, /, %
+
+• Comparison: 
+== :-Compares values only.
+, === :-Compares values AND types.
+, !=, >, <
+
+ • Logical: &&, ||, !
+
+• Ternary: condition ? value1 : value2
+
+ 
+7) Array methods :-
+// array push method :- Appends new elements to the end of an array, and returns the new length of the array.
+var arr = ["Banana", "Orange", "Apple", "Mango"];
+var arr1 =arr.push('coconat');
+ console.log(arr);
+// array pop :- Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+ var arr1 = arr.pop();
+ console.log(arr);
+ 
+
+// array shift :Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+ var arr1 = arr.shift();
+ console.log(arr);
+
+
+// array unshift :Inserts new elements at the start of an array, and returns the new length of the array.
+ var arr1 = arr.unshift('coconat');
+ console.log(arr);
+
+// array map :Calls a defined callback function on each element of an array, and returns an array that contains the results.
+var number = [1,2,3,4,5,6];
+  var squared = number.map(num =>num*num);
+ console.log(squared);
+
+//  array filter :Returns the elements of an array that meet the condition specified in a callback function.
+
+ var even = number.filter(num =>num % 2===0);
+ console.log(even);
+  
+//  array rediuse:Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is 
+// provided as an argument in the next call to the callback function.
+
+var sum = number.reduce((total,num)=>total + num, 0);
+ console.log(sum);
+
+// array find :- Returns the value of the first element in the array where predicate is true, and undefined otherwise.
+
+ var found = number.find(num =>num > 5);
+ console.log(found);
+
+ 8)string method :-
+ 
+// concat =Returns a string that contains the concatenation of two or more strings.
+
+ console.log(str.concat(" "+"hellow"));
+ 
+
+ var text1 ='code';
+ var text2 = 'first'
+ console.log(text1.concat(" "+ text2));
+
+//  trim :-Removes the leading and trailing white space and line terminator characters from a string.
+var str =" jay shree ram  ";
+console.log('jay shree ram ' === str.trim());
+
+// indexOf :-Returns the position of the first occurrence of a substring.
+var data =" vinod,Dnyaneshwar, gaikwad "
+console.log(data.indexOf('d'));0
+console.log(data.toUpperCase());
+console.log(data.match('gaikwad'));
+
+// slice :-Returns a section of a string.
+console.log(data.slice(0,18));
+
+
+var dom = "jay shree ram";
+var dom1 = "$";
+// replace :-Replaces text in a string, using a regular expression or search string.
+console.log(dom.replace('ram','Hanuman'));
+// repeat :-Returns a String value that is made from count copies appended together. If count is 0, the empty string is returned.
+console.log(dom1.repeat('10','1'));
+
+split() → String ➝ Array
+
+join() → Array ➝ String
+
+ array :join = Adds all the elements of an array into a string, separated by the specified separator string.
+// var text = cricket.join();
+// console.log(text);
+  
+
+// array : reverse = Reverses the elements in an array in place. This method mutates the array and returns a reference to the same array.
+// var text = cricket.reverse();
+// console.log(text);
+
+// array reverse String :
+
+// var text = cricket.();
+// console.log(text);
+
+9) Storage
+// 1) localStorage :-
+Stores data permanently (until cleared by the user or code).
+Survives page reloads and browser restarts.
+Key-value pairs are stored as strings.
+
+localStorage.setItem("username","Raina:");
+var user = localStorage.getItem('username');
+document.writeln(user);
+
+// localStorage.removeItem("username");
+// localStorage.clear();  
+// console.log(user);
+
+// 2) sessionStorage:-
+Similar to localStorage but data is stored only for one session.
+Gets cleared when the browser/tab is closed.
+Useful for temporary storage (e.g., form progress).
+
+sessionStorage.setItem("userID","1232");
+var id = sessionStorage.getItem('userID');
+document.writeln(id);   
+
+
+// 3)cookies:-
+Small pieces of data stored in the browser.
+Can be sent to the server with every request.
+Size limit: ~4KB.
+Expiry can be set.
+
+
+document.cookie = "username=Vinod; expires=Fri, 31 Dec 2025 23:59:59 GMT";
+console.log(document.cookie);
+document.writeln(document.cookie);
+
+
+10) object function :-
+1) Synchronous (one after another)
+console.log("Task 1");
+console.log("Task 2");
+
+2) Asynchronous (setTimeout simulates a delay)
+console.log("Start"); 
+setTimeout(() => 
+    console.log("Async Task Done"), 
+2000);
+console.log("End");
+

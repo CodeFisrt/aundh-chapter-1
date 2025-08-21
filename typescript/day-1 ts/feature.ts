@@ -28,7 +28,7 @@ let addition = (a: number, b: number): number => {
 console.log(addition(10, 7));
 
 
-// 
+//  
 
 let square = (x: number): number => x * x;
 
@@ -43,3 +43,4 @@ let getUser = (id: number) => ({
 
 console.log(getUser(1)); 
 
+ 
