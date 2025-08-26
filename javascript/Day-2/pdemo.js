@@ -24,37 +24,37 @@ function mulNumbers() {
 // let z = 0;
 
 // Logical AND (&&)
-// console.log(x > y && y > z); // true (10 > 5 is true, and 5 > 0 is true)
-// console.log(x < y && y > z); // false (10 < 5 is false, second part not evaluated)
+console.log(x > y && y > z); // true (10 > 5 is true, and 5 > 0 is true)
+console.log(x < y && y > z); // false (10 < 5 is false, second part not evaluated)
 
 // Logical OR (||)
-// console.log(x < y || y > z); // true (10 < 5 is false, but 5 > 0 is true)
-// console.log(x < y || z === null); // false (10 < 5 is false, and 0 === null is false)
+console.log(x < y || y > z); // true (10 < 5 is false, but 5 > 0 is true)
+console.log(x < y || z === null); // false (10 < 5 is false, and 0 === null is false)
 
 // Logical NOT (!)
-// console.log(!(x > y)); // false (x > y is true, !true is false)
-// console.log(!(z === 0)); // false (z === 0 is true, !true is false)
+console.log(!(x > y)); // false (x > y is true, !true is false)
+console.log(!(z === 0)); // false (z === 0 is true, !true is false)
 
 // 2. Comparison Operators
-// Equal : ==//
-// console.log(5 =="5");// true (string "5" is coerced to number 5)
+// Equal : == :-Compares values only.
+console.log(5 =="5");// true (string "5" is coerced to number 5)
 
-// Strict Comparison ===
-// console.log(5 ==="5");// false (number 5 and string "5" are different types)
+// Strict Comparison === :- Compares values AND types.
+console.log(5 ==="5");// false (number 5 and string "5" are different types)
 
 // •Not Equal: !=
-    // console.log(5 != "5"); // false
+    console.log(5 != "5"); // false
 
     // •Greater than: >
-        // console.log(10 > 5); // true
+        console.log(10 > 5); // true
 //  •Less than: <
-    // console.log(5 < 10); // true
+    console.log(5 < 10); // true
 
 //  •Greater than or Equal to: >=
-    // console.log(10 >= 10); // true
+    console.log(10 >= 10); // true
 
 //  •Less than or Equal to: <=
-    // console.log(5 <= 5); // true
+    console.log(5 <= 5); // true
 
     // js opraters //
      
