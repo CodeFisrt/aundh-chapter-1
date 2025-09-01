@@ -1,0 +1,201 @@
+------------------------------
+       JavaScript
+------------------------------
+
+1. What is JavaScript? 
+--> JavaScript is a powerful programming language that makes websites interactive.
+    JavaScript is a single-threaded language that executes one task at a time.
+    It is an interpreted language which means it executes the code line by line.
+
+2.Why use JavaScript?    
+--> It's everywhere: It's the most popular language for web development and runs in all modern browsers
+    It's versatile: You can use it for front-end development and back-end development with tools like Node.js.
+
+3.Limitations And Advantages Of JavaScript
+--> Limitations of JavaScript 
+      -JavaScript could not used for networking applications
+      -JavaScript doesn't have any multithreading capabilities   
+--> Advantages of JavaScript
+      - JavaScript runs in the browser without needing server communication for most tasks
+            (Example: Form validation before submitting data to the server)
+      - Easy to Learn and Implement
+         Syntax is simple compared to many programming languages.
+      - Event-Based Programming
+         Makes it easy to respond to user actions like clicks, mouse movements, or keyboard input.      
+
+4.variable 
+--> variable is like a container for storing information. We can declare a variable 
+    using keywords like var, let, or const.
+
+
+5.dataType
+-->Primitive data types can store only a single value. 
+   non-primitive data types To store multiple and complex values.
+
+   Primitive Data Type | None-Primitive Data Type
+-----------------------|--------------------------
+     Number            |   Object                              
+     String            |   Array     { value sotre with referance }                                
+     Boolean           |   function                                
+       Null            |                                       
+     Undefined         |                                 
+      bigint           |                                      
+      symbol           |     
+      
+6.Operators 
+--> Arithmetic Operators (+, -, *, /)
+    Assignment Operators (= , += , -= , /= , %=)     
+    Comparison Operators (== , === , < , >)
+    Logical Operators (&& , || , ^ (XOR) , ~ (NOT))
+    Miscellaneous Operators
+       - typeof value
+       - Ternary Operator  ?: 
+            let age = 20;
+            let canVote = (age >= 18) ? "Yes" : "No";
+       - delete Operator
+
+7.setTimeout 
+--> "setTimeout() is a function that takes another function as a parameter (callback) 
+     and runs it after a given delay."
+
+8.Conditions
+--> * if/else -- if...else: Executes one block if condition is true, otherwise another block.
+    if(condition a == b){
+        c.l(true)
+      }else{
+       c.l(false)
+    }
+    *else / if --Checks multiple conditions, executes first true block.
+    *Switch --Chooses and executes a code block based on matching a given value with multiple cases.
+
+9.Loops
+--> -- for: Repeats a block of code a fixed number of times using a counter.
+    -- while: Repeats a block of code as long as a condition is true (checks before running).
+    -- do...while: Runs a block of code at least once, then repeats while the condition is true.
+        for = count-based, while = condition-first, do...while = condition-last.
+
+10.Function 
+   A function is a reusable block of code that takes parameters, performs some operations, 
+    and can return an output (result).
+   It helps in code reusability and readability.
+ Types
+
+   -Function Declaration → A function defined with the function keyword
+   -Function Expression → A function assigned to a variable
+   -Arrow Function → Shorter syntax using fat arrow (=>)
+   -Anonymous Function → A function without a name, often used as callback.
+
+11.objects
+     objects are collections of key–value pairs (properties and methods) where:
+     Keys → always strings or symbols
+     Values → can be any data type (number, string, function, array, another object, etc.)
+          1.Object Literal
+          2.Using new Object()
+             - let car = new Object();
+          3.Using a Constructor Function
+             - function Person(name, age) {
+                 this.name = name;
+                 this.age = age;
+                 }
+                 let p1 = new Person("Sagar", 25);
+
+          4.Using Object.create()
+             - This creates a new object with a specific prototype.
+
+12.Array
+ -- array used to store ordered collections of elements that can be accessed 
+    using an index (0-based position)
+
+--> Difference Between filter() and find()
+     - filter()
+        Returns a new array of all elements that match the condition
+     - find()
+        Returns the first matching element
+   - map() → Transforms each element and returns a new array
+   - reduce() → method transforms an array into a single value by applying a callback function on each element
+   - push() → Adds an element to the end.
+   - pop() → Removes the last element.
+   - shift() → Removes the first element. 
+   - unshift() → Adds an element at the beginning.
+   - concat() → Merges two or more arrays.
+   - join() → Converts array elements into a string.
+   - slice() → Returns a part of the array (does not modify original).
+   - splice() → Adds/removes elements at a specific index.
+   - sort() → Sorts array elements.Example arr = [3,2,1]   arr.sort() result [1,2,3]
+   - reverse() → Reverses array order.
+   - filter() → Selects elements that pass a condition and returns them   
+
+13. String
+     - A string is a sequence of characters used to represent text, 
+      enclosed in single quotes ('), double quotes (") or backticks (``).
+
+    String Methods
+       - length → Returns the length of a string.
+       - charAt(index) → Returns character at given index.
+       - charCodeAt(index) → Returns Unicode of character.
+       - at(index) → Returns character at index (supports negative).
+       - slice(start,end) → Extracts part of string (supports negative).
+       - toUpperCase() → Converts string to uppercase.
+       - toLowerCase() → Converts string to lowercase.
+       - trim() → Removes spaces from both ends.
+       - trimStart() / trimEnd() → Removes spaces from start / end. 
+       - concat() → Joins two or more strings.
+       - split() → Splits string into array.
+       - Indexof 
+       - Index 
+
+14.Dialog Box
+    - Alert Box (alert())
+      Used to display a message to the user.Only has an OK button.
+    - Confirm Box (confirm())
+      Used to ask for confirmation (Yes/No).
+    - Prompt Box (prompt())
+      Used to take input from the user.
+
+15.JavaScript Storage 
+     - Local Storage (localStorage) 5-10MB
+        Stores data permanently in the browser (until manually cleared)
+     - Session Storage (sessionStorage) 5MB
+         Stores data only for one session.
+         Data is deleted when the browser tab is closed.
+     - Cookies (document.cookie) 4KB
+         Small pieces of data stored in the browser.
+         Have expiry dates and are sent with every HTTP request to the server.
+         
+16. Event
+   Event is something that happens in the browser (user action or system-generated)
+
+   - Mouse Events
+      onclick → when user clicks.
+      ondblclick → double-click.
+      onmouseover → when mouse enters element.
+      onmouseout → when mouse leaves.
+      onmousemove → when mouse moves.
+
+   - Keyboard Events
+      onkeydown → key pressed down.
+      onkeyup → key released.
+      onkeypress → key pressed (deprecated, use keydown).
+
+   - Form Events
+      onsubmit → when form is submitted.
+      onchange → when input changes.
+      oninput → when typing in input field.
+      onfocus → when input is focused.
+      onblur → when input loses focus.
+
+   - Window Events
+      onload → when page finishes loading.
+      onresize → when window is resized.
+      onscroll → when page is scrolled.
+      onerror → when error occurs.
+
+
+17.Hoisting
+  - Hoisting means moves declarations to the top before running the code.
+  let const 
+
+18.closur
+  - Closure are created when an inner function uses a variable from its outer function scope. 
+
+

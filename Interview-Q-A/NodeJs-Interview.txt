@@ -1,0 +1,11 @@
+
+
+1. What is Node.js and why is it used?
+    → Node.js is a JavaScript runtime built on Chrome’s V8 engine, used for building fast,
+      scalable, server-side applications.
+
+2. What is middleware in Node.js/Express?
+    → Middleware are functions that run between request and response, used for logging, auth, error handling.
+
+3. What is CORS in Node.js?
+    → CORS (Cross-Origin Resource Sharing) allows servers to handle requests from different domains.

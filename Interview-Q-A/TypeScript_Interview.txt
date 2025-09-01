@@ -1,0 +1,30 @@
+-----------------------
+    TypeScript 
+-----------------------
+
+1.TypeScript VS JavaScript 
+ --> The main difference is that JavaScript is dynamically typed, while TypeScript is statically typed, 
+     which means TypeScript catches many errors at compile time instead of runtime.
+     TypeScript especially useful for large-scale applications, team projects, and long-term maintenance.
+     JavaScript gives flexibility, while TypeScript provides safety and maintainability.
+
+2.Features
+  - Default Parameter
+  - Template Literal -->backtick (``)
+  - Arrow Function
+  - Let and Const
+  - Spread and Rest Operator
+  - Object.assign
+  - Classes
+
+3.Spread and Rest Operator
+ --> Spread and Rest operators use the same ... syntax, but they serve opposite purposes.
+      Spread is about copying, merging, or passing elements individually, whereas Rest
+       is about grouping multiple values together.
+
+ -- Spread 
+       The Spread operator is used to expand data 
+        For example, it allows us to expand an array into individual elements, or merge two objects together.
+ -- Rest
+      Rest operator is used to collect data. It gathers multiple elements into a single array or object.
+      We usually see this in function parameters, where we don’t know how many arguments will be passed.
